@@ -1,0 +1,193 @@
+*{
+    transition: 0.3s ease;
+}
+body{
+    background-image: url(Slike/pozadina.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.meni{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.meni ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+.meni ul a{
+    text-decoration: none;
+}
+.meni ul li{
+    display: inline;
+    color: white;
+    font-weight: bold;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+.meni ul a li:hover{
+    background-color: #7fcbd7;
+    border-radius: 15px;
+}
+/*Pocetna*/
+.podaci{
+    width: 40%;
+    height: 200px;
+    padding-left: 80px;
+    margin-top: 95px;
+    color: white;
+}
+.podaci h1{
+    font-size: 40;
+}
+.podaci span{
+    font-style: italic;
+}
+.podaci p{
+    font-size: 20px;
+}
+.znak{
+    float: right;
+    width: 40%;
+    height: 400px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.znak img{
+    width: 300px;
+    height: 400px;
+    padding-right: 80px;
+}
+
+/*Kontakt*/
+.forma{
+    width: 93%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 60px;
+    padding-left: 80px;
+    color: white;
+    font-size: 20px;
+}
+#ime, #prezime, #email, #psw{
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+}
+#ime:hover, #prezime:hover, #email:hover, #psw:hover{
+    border: 3px solid #7fcbd7;
+}
+#da, #ne{
+    width: 20px;
+    height: 20px;
+}
+#prosledi, #ponisti{
+    border: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 120px;
+}
+#prosledi:hover, #ponisti:hover{
+    border: 3px solid #7fcbd7;
+    background-color: powderblue;
+}
+/*O nama*/
+.onama{
+    width: 40%;
+    height: 400px;
+    color: white;
+    padding-right: 80px;
+    margin-top: 40px;
+    float: right;
+}
+.onama h3{
+    font-style: italic;
+    font-size: 23px;
+}
+.onama .prvi{
+    font-weight: bold;
+    font-size: 16px;
+}
+.onama ul{
+    list-style: circle;
+}
+.slika{
+    float: left;
+    width: 40%;
+    height: 400px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.slika img{
+    width: 500px;
+    height: 350px;
+    padding-left: 80px;
+}
+/*Proizvodi*/
+.cenovnik{
+    /*border: 1px solid white;*/
+    width: 90%;
+    margin-top: 80px;
+    margin-left: 65px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 70px;
+}
+.proizvod{
+    /*border: 1px solid white;*/
+    width: 320px;
+    height: 470px;
+}
+.slikapr{
+    /*border: 1px solid white;*/
+    width: 290px;
+    height: 340px;
+    margin: 0 auto;
+}
+.slikapr img{
+    width: 290px;
+    height: 340px;
+}
+.slikapr img:hover{
+    transform: translateY(-15px);
+}
+.ime_cena h2{
+    text-align: center;
+    color: white;
+}
+.ime_cena h3{
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .meni{
+        justify-content: center;
+        height: 200px;
+    }
+    .meni ul li{
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .cenovnik{
+        display: block;
+    }
+    .proizvod{
+        margin-top: 250px;
+    }
+}
